@@ -1,7 +1,39 @@
-import { tabs } from '@/app/academy/page'
 import { activeTabAtom } from '@/atom'
 import { useAtom } from 'jotai'
 import React from 'react'
+import PathComponent from '../storyTelling';
+import CarouselSection from '../carouselSection';
+import PopularNarratives from '../PopularNarratives';
+import RecommendedNarratives from '../Narattives';
+
+export  interface ITab {
+  label: string;
+  content: JSX.Element;
+}
+
+
+export  const tabs: ITab[] = [
+  {
+    label: "Essentials",
+    content: (
+      <div className="w-full ">
+        <PathComponent />
+      </div>
+    ),
+  },
+  {
+    label: "Alpha Hub",
+    content: (
+      <div>
+        <CarouselSection /> <PopularNarratives /> <RecommendedNarratives />{" "}
+      </div>
+    ),
+  },
+];
+
+interface TabProps {
+  tabs: ITab[];
+}
 
 const TabSwitcher = () => {
     const [activeTab, setActiveTab] = useAtom(activeTabAtom)

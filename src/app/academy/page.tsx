@@ -11,9 +11,15 @@ import { useState } from "react";
 import { useAtom } from "jotai";
 import { activeTabAtom } from "@/atom";
 import PathComponent from "@/components/storyTelling";
-import TabSwitcher from "@/components/tabSwitcher";
+import TabSwitcher, {  ITab, tabs } from "@/components/tabSwitcher";
 
-const Tab = ({ tabs }: { tabs: { label: string; content: JSX.Element }[] }) => {
+
+interface TabProps {
+  tabs: ITab[];
+}
+
+
+const Tab : React.FC<TabProps>  = (props : TabProps) => {
   const [activeTab, setActiveTab] = useAtom(activeTabAtom);
 
   return (
@@ -26,24 +32,7 @@ const Tab = ({ tabs }: { tabs: { label: string; content: JSX.Element }[] }) => {
 };
 
 
-export  const tabs = [
-  {
-    label: "Essentials",
-    content: (
-      <div className="w-full ">
-        <PathComponent />
-      </div>
-    ),
-  },
-  {
-    label: "Alpha Hub",
-    content: (
-      <div>
-        <CarouselSection /> <PopularNarratives /> <RecommendedNarratives />{" "}
-      </div>
-    ),
-  },
-];
+
 
 export default function Academy() {
    

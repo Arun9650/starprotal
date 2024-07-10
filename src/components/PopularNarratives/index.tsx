@@ -60,6 +60,17 @@ const narratives = [
     chain: "OP Mainnet",
     chainImage: "/assets/optimism.png",
   },
+  {
+    title: "Follow People on Warpcast",
+    description: "Follow creators on Warpcast.",
+    tasks: 5,
+    xp: 50,
+    image: "/assets/creatorsonFarcaster.png",
+    baseBackground: "bg-[#bb5e35]",
+    grid: "/assets/grid-trending.png",
+    chain: "OP Mainnet",
+    chainImage: "/assets/optimism.png",
+  },
 ];
 
 const ExploreLensData = [
@@ -140,7 +151,7 @@ const PopularNarratives = () => {
           </a>
         </div>
         <div className="flex items-stretch  space-x-4    rounded-3xl  bg-[#101010]">
-          <div className="bg-[#141414] rounded-l-3xl  shadow-lg w-[30%] p-8">
+          <div className="bg-[#141414] rounded-l-3xl hover:bg-[#2d2d2d]  shadow-lg w-[30%] p-8">
             <h3 className="text-[32px] font-base text-white">
               {narratives[0].title}
             </h3>
@@ -276,7 +287,7 @@ const PopularNarratives = () => {
 const ExploreLens = () => {
   return (
     <div className="flex space-x-4 rounded-3xl  bg-[#101010]">
-      <div className="bg-[#141414] rounded-l-3xl  overflow-hidden shadow-lg w-[30%] p-8">
+      <div className="bg-[#141414] rounded-l-3xl hover:bg-[#2d2d2d] overflow-hidden shadow-lg w-[30%] p-8">
         <h3 className="text-[32px] font-base text-white">
           {ExploreLensData[0].title}
         </h3>
@@ -328,7 +339,7 @@ const ExploreLens = () => {
                     key={index}
                     className="h-full md:basis-1/2 lg:basis-1/3"
                   >
-                    <div className="h-full ">
+                    <div className="h-full  ">
                       <Card className=" border-[#212121] h-full  rounded-xl">
                         <CardContent className="p-0 h-full aspect-square rounded-lg   flex  w-full">
                           <div
@@ -407,7 +418,7 @@ const ExploreLens = () => {
 const ExploringGrass = () => {
   return (
     <div className="flex space-x-4 rounded-3xl  bg-[#101010]">
-      <div className="bg-[#141414] rounded-l-3xl  overflow-hidden shadow-lg w-[30%] p-8">
+      <div className="bg-[#141414] rounded-l-3xl hover:bg-[#2d2d2d] overflow-hidden shadow-lg w-[30%] p-8">
         <h3 className="text-[32px] font-base text-white">
           {ExploreGrassData[0].title}
         </h3>

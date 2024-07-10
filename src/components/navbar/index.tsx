@@ -32,7 +32,7 @@ export default function Navbar() {
       style={{ zIndex: 100 }}
     >
       <span className=" text-xl font-normal    text-white">
-        intract.
+        Star Portal.
       </span>
 
       <div className=" flex items-center">

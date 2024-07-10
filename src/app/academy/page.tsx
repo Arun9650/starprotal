@@ -1,16 +1,11 @@
 "use client";
-import CarouselSection from "@/components/carouselSection";
 import CryptoCreators from "@/components/CryptoCreators";
 import CryptoDictionary from "@/components/CryptoDictionary";
 import Footer from "@/components/footer";
 import Hero from "@/components/hero";
-import RecommendedNarratives from "@/components/Narattives";
 import Navbar from "@/components/navbar";
-import PopularNarratives from "@/components/PopularNarratives";
-import { useState } from "react";
 import { useAtom } from "jotai";
 import { activeTabAtom } from "@/atom";
-import PathComponent from "@/components/storyTelling";
 import TabSwitcher, {  ITab, tabs } from "@/components/tabSwitcher";
 
 
@@ -43,8 +38,11 @@ export default function Academy() {
       <Tab tabs={tabs} />
       <CryptoCreators />
       <CryptoDictionary />
+
+      <div className="">
       <TabSwitcher/>
       <Footer />
+      </div>
     </main>
   );
 }

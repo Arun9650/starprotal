@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
 
-    <div className="bg-[url('/assets/herobg.png')] h-screen mt-14 relative w-full bg-no-repeat bg-center bg-contain">
+    <div className="bg-[url('/assets/herobg.png')] h-screen mt-10 2xl:mt-5 relative w-full bg-no-repeat bg-center bg-contain">
       <div className={`${activeTab === "Alpha Hub" ? "-top-44" : "-top-10"}  flex w-full h-full justify-center absolute   items-center`}>
        
         
@@ -29,7 +29,7 @@ const Hero = () => {
 
             <div className="w-[550px] text-xl text-center ">
               <div>
-              <span className="text-white"> Intract users </span>have together
+              <span className="text-white"> Star Portal users </span>have together
               made more than <span className="text-white">$100 million</span> in
               web3. Join them and{" "}
               <span className="text-white">learn how to earn crypto!</span>

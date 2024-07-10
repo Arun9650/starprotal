@@ -18,8 +18,8 @@ const CryptoDictionary = () => {
         />
 
         <div className="absolute inset-0 custom-gradient flex items-end p-4">
-          <div>
-            <h2 className="text-2xl font-semibold">Web3 + Degen Glossary</h2>
+          <div className="backdrop-blur-sm ">
+            <h2 className="text-2xl text-slate-200 font-semibold">Web3 + Degen Glossary</h2>
             <p className="text-gray-300">Your own crypto dictionary</p>
           </div>
         </div>

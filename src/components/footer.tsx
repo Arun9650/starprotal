@@ -7,7 +7,7 @@ const Footer = () => {
          <footer className="max-w-[1200px]  mx-auto  py-8 px-4">
         <div className="flex  justify-between gap-8">
             <div>
-                <h2 className="text-3xl font-bold mb-2">intract.</h2>
+                <h2 className="text-3xl font-bold mb-2">Star Portal.</h2>
                 <p className='text-sm w-72'>We are your personal guide for exploring web3 projects & earning 100x rewards</p>
             </div>
             <div className='grid-cols-1 md:grid-cols-5'>

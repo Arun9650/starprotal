@@ -51,14 +51,14 @@ const narratives = [
 
 const RecommendedNarratives = () => {
   return (
-    <div className="container max-w-6xl mx-auto p-4">
+    <div className="container max-w-[1200px] mt-10 mx-auto p-4">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-bold text-white">Recommended Narratives</h2>
         <a href="#" className="text-sm text-gray-400 hover:underline">See all</a>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {narratives.map((narrative, index) => (
-          <div key={index} className="flex bg-[#151515] rounded-3xl border border-[#252525] p-4  overflow-hidden shadow-lg">
+          <div key={index} className="flex hover:bg-[#2d2d2d] bg-[#151515] rounded-3xl border border-[#252525] p-4  overflow-hidden shadow-lg">
             <div className="relative w-[150px] h-[180px]">
                 <div className='p-2 border border-[#2a2a2a] bg-[#202020] rounded-2xl h-full'>
                 <Image src={narrative.image} alt={narrative.title} width={150} height={200} className="object-cover  rounded-xl w-full h-full" />
